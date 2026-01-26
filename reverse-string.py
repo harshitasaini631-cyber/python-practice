@@ -1,2 +1,2 @@
-str = (1,2,3,4,5)
+str = ("hello world")
 print(str[::-1])
