@@ -1,2 +1,7 @@
-even = [n for n in range(1,51) if n % 2 == 0]
-print(even)
+
+
+for i in range(1,51):
+    if i%2==0:
+        print(i)
+    else:
+        continue   
