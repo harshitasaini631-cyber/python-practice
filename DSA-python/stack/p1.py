@@ -12,6 +12,12 @@ class Stack:
         else:
             (self.stack.pop(),"element popped")    
 
+    def peek(self):
+        if len(self.stack)==0:
+            print("Stack is empty")
+        else:
+            print(self.stack[0])            
+
     def display(self):
         print(self.stack)    
 
