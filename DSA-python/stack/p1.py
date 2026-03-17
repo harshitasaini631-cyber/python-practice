@@ -16,10 +16,18 @@ class Stack:
         if len(self.stack)==0:
             print("Stack is empty")
         else:
-            print(self.stack[0])            
+            print(self.stack[0])     
+
+    def isEmpty(self):
+        if len(self.stack)==0:
+            print("stack is empty")
+        else:
+            print("stack is full")                   
 
     def display(self):
-        print(self.stack)    
+        print(self.stack)  
+
+          
 
 
 s = Stack()
