@@ -4,5 +4,12 @@ class Node:
         self.next = None
 
 class LinkedList:
-     def __init__(self):
+    def __init__(self):
         self.head = None
+
+    def traverse(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")        
