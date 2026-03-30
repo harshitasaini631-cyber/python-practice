@@ -22,3 +22,41 @@ class LinkedList:
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
+
+
+    #insert at the end
+    def insert_end(self,data):
+        new_node = Node(data)
+
+        if not self.head:
+            self.head = new_node
+            return
+
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+
+        temp.next = new_node    
+
+
+    #  Insert at Position
+    def insert_at_position(self, data, pos):
+        if pos == 0:
+            self.insert_at_beginning(data)
+            return
+
+        new_node = Node(data)
+        temp = self.head
+
+        for _ in range(pos - 1):
+            if temp is None:
+                print("Invalid position")
+                return
+            temp = temp.next
+
+        if temp is None:
+            print("Invalid position")
+            return
+
+        new_node.next = temp.next
+        temp.next = new_node        
