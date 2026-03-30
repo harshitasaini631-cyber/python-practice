@@ -60,3 +60,9 @@ class LinkedList:
 
         new_node.next = temp.next
         temp.next = new_node        
+
+
+    # Delete from Beginning
+    def delete_from_beginning(self):
+        if self.head:
+            self.head = self.head.next    
