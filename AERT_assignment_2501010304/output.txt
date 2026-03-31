@@ -1,0 +1,57 @@
+----- Part A: Stack ADT -----
+Stack size: 3
+Top element: 30
+Popped element: 30
+Is stack empty? False
+Stack size after pop: 2
+
+
+----- Part B: Factorial -----
+factorial(0) = 1
+factorial(1) = 1
+factorial(5) = 120
+factorial(10) = 3628800
+
+
+----- Part B: Fibonacci -----
+n = 5
+Naive Fibonacci result = 5, calls = 15
+Memoized Fibonacci result = 5, calls = 9
+
+n = 10
+Naive Fibonacci result = 55, calls = 177
+Memoized Fibonacci result = 55, calls = 19
+
+n = 20
+Naive Fibonacci result = 6765, calls = 21891
+Memoized Fibonacci result = 6765, calls = 39
+
+n = 30
+Naive Fibonacci result = 832040, calls = 2692537
+Memoized Fibonacci result = 832040, calls = 59
+
+----- Part C: Tower of Hanoi (N = 3) -----
+Move disk 1 from A to C
+Move disk 2 from A to B
+Move disk 1 from C to B
+Move disk 3 from A to C
+Move disk 1 from B to A
+Move disk 2 from B to C
+Move disk 1 from A to C
+
+Stored Hanoi moves in Stack:
+Move disk 1 from A to C
+Move disk 2 from A to B
+Move disk 1 from C to B
+Move disk 3 from A to C
+Move disk 1 from B to A
+Move disk 2 from B to C
+Move disk 1 from A to C
+
+
+----- Part D: Recursive Binary Search -----
+Search 7 in [1, 3, 5, 7, 9, 11, 13] -> Index = 3
+Search 1 in [1, 3, 5, 7, 9, 11, 13] -> Index = 0
+Search 13 in [1, 3, 5, 7, 9, 11, 13] -> Index = 6
+Search 2 in [1, 3, 5, 7, 9, 11, 13] -> Index = -1
+Search 5 in empty list -> Index = -1
