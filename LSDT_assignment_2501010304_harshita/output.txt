@@ -1,0 +1,100 @@
+TASK 1: DYNAMIC ARRAY
+==================================================
+Appending 1
+Array: [1], Size: 1, Capacity: 2
+Appending 2
+Array: [1, 2], Size: 2, Capacity: 2
+Appending 3
+Resizing from 2 to 4
+Array: [1, 2, 3], Size: 3, Capacity: 4
+Appending 4
+Array: [1, 2, 3, 4], Size: 4, Capacity: 4
+Appending 5
+Resizing from 4 to 8
+Array: [1, 2, 3, 4, 5], Size: 5, Capacity: 8
+Appending 6
+Array: [1, 2, 3, 4, 5, 6], Size: 6, Capacity: 8
+Appending 7
+Array: [1, 2, 3, 4, 5, 6, 7], Size: 7, Capacity: 8
+Appending 8
+Array: [1, 2, 3, 4, 5, 6, 7, 8], Size: 8, Capacity: 8
+Appending 9
+Resizing from 8 to 16
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9], Size: 9, Capacity: 16
+Appending 10
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], Size: 10, Capacity: 16
+Appending 11
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], Size: 11, Capacity: 16
+
+Performing 3 pops:
+Popped: 11
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], Size: 10, Capacity: 16
+Popped: 10
+Array: [1, 2, 3, 4, 5, 6, 7, 8, 9], Size: 9, Capacity: 16
+Popped: 9
+Array: [1, 2, 3, 4, 5, 6, 7, 8], Size: 8, Capacity: 16
+
+==================================================
+TASK 2A: SINGLY LINKED LIST
+==================================================
+Insert 3 elements at beginning:
+30 -> None
+20 -> 30 -> None
+10 -> 20 -> 30 -> None
+
+Insert 3 elements at end:
+10 -> 20 -> 30 -> 40 -> None
+10 -> 20 -> 30 -> 40 -> 50 -> None
+10 -> 20 -> 30 -> 40 -> 50 -> 60 -> None
+
+Delete value 40:
+Deleted 40 from Singly Linked List.
+10 -> 20 -> 30 -> 50 -> 60 -> None
+Delete value 100 (not present):
+Value 100 not found in Singly Linked List.
+10 -> 20 -> 30 -> 50 -> 60 -> None
+
+==================================================
+TASK 2B: DOUBLY LINKED LIST
+==================================================
+10 <-> 20 <-> 30 <-> 40 <-> None
+
+Insert 25 after 20:
+Inserted 25 after 20.
+10 <-> 20 <-> 25 <-> 30 <-> 40 <-> None
+
+Delete node at position 1:
+Deleted node at position 1.
+10 <-> 25 <-> 30 <-> 40 <-> None
+
+Delete last node:
+Deleted node at position 3.
+10 <-> 25 <-> 30 <-> None
+
+==================================================
+TASK 3A: STACK USING SLL
+==================================================
+Stack top to bottom:
+300 -> 200 -> 100 -> None
+Peek: 300
+Pop: 300
+Stack top to bottom:
+200 -> 100 -> None
+
+==================================================
+TASK 3B: QUEUE USING SLL
+==================================================
+Queue front to rear:
+1 -> 2 -> 3 -> None
+Front: 1
+Dequeue: 1
+Queue front to rear:
+2 -> 3 -> None
+
+==================================================
+TASK 4: BALANCED PARENTHESES CHECKER
+==================================================
+Expression: "([])" -> Balanced
+Expression: "([)]" -> Not Balanced
+Expression: "(((" -> Not Balanced
+Expression: "" -> Balanced
