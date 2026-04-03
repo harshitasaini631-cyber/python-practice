@@ -10,3 +10,10 @@ class DoublyLinkedList:
     def __init__(self):
         self.head = None
 
+#traversing in doubly linked list
+    def traverse_forward(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" <-> ")
+            temp = temp.next
+        print("None")
