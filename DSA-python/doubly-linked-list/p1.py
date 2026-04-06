@@ -27,4 +27,19 @@ class DoublyLinkedList:
             self.head.prev = new_node
 
         self.head = new_node
+
+#inserting at the end
+    def insert_at_end(self, data):
+        new_node = DNode(data)
+
+        if self.head is None:
+            self.head = new_node
+            return
+
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+
+        temp.next = new_node
+        new_node.prev = temp    
       
