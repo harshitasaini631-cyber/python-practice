@@ -42,4 +42,21 @@ class DoublyLinkedList:
 
         temp.next = new_node
         new_node.prev = temp    
+
+
+#traversing backward
+    def traverse_backward(self):
+        temp = self.head
+
+        if temp is None:
+             print("None")
+             return
+
+        while temp.next:
+            temp = temp.next
+
+        while temp:
+            print(temp.data, end=" <-> ")
+            temp = temp.prev
+        print("None")    
       
