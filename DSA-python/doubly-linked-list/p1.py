@@ -58,5 +58,31 @@ class DoublyLinkedList:
         while temp:
             print(temp.data, end=" <-> ")
             temp = temp.prev
-        print("None")    
+        print("None")  
+
+    def insert_at_position(self, data, pos):
+    new_node = DNode(data)
+
+    if pos == 0:
+        self.insert_at_beginning(data)
+        return
+
+    temp = self.head
+    for _ in range(pos - 1):
+        if temp is None:
+            print("Invalid position")
+            return
+        temp = temp.next
+
+    if temp is None:
+        print("Invalid position")
+        return
+
+    new_node.next = temp.next
+    new_node.prev = temp
+
+    if temp.next is not None:
+        temp.next.prev = new_node
+
+    temp.next = new_node      
       
