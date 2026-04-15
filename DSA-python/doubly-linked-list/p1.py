@@ -86,4 +86,29 @@ class DoublyLinkedList:
 
     temp.next = new_node      
       
-    
+    #deleting form end 
+    def delete_from_end(self):
+    if self.head is None:
+        return
+
+    if self.head.next is None:
+        self.head = None
+        return
+
+    temp = self.head
+    while temp.next:
+        temp = temp.next
+
+    temp.prev.next = None
+
+    #delete from beginning
+    def delete_from_beginning(self):
+    if self.head is None:
+        return
+
+    if self.head.next is None:
+        self.head = None
+        return
+
+    self.head = self.head.next
+    self.head.prev = None
